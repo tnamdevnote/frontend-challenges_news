@@ -1,60 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | News homepage</title>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav__menu">
+        <li class="nav__menu__item">Home</li>
+        <li class="nav__menu__item">New</li>
+        <li class="nav__menu__item">Popular</li>
+        <li class="nav__menu__item">Trending</li>
+        <li class="nav__menu__item">Categories</li>
+      </ul>
+    </nav>
+    <main class="site__content">
+      <section class="headline">
+        <h1 class="headline__heading">The Bright Future of Web 3.0?</h1>
+        <p class="headline__subheading">
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
+          of the people. But is it really fulfilling its promise?
+        </p>
+        <button type="button" class="headline__readmore">Read more</button>
+      </section>
+      <section class="trending">
+        <h1 class="trending__heading">New</h1>
+        <ul class="trending__list">
+          <li class="trending__list__item">
+            <h2 class="trending__card__heading">Hydrogen VS Electric Cars</h2>
 
-  The Bright Future of Web 3.0?
+            <h3 class="trending__card__subheading">Will hydrogen-fueled cars ever catch up to EVs?</h3>
+          </li>
+          <li class="trending__list__item">
+            <h2 class="trending__card__heading">The Downsides of AI Artistry</h2>
+            <h3 class="trending__card__subheading">
+              What are the possible adverse effects of on-demand AI image generation?
+            </h3>
+          </li>
+          <li class="trending__list__item">
+            <h2 class="trending__card__heading">Is VC Funding Drying Up?</h2>
+            <h3 class="trending__card__subheading">
+              Private funding by VC firms is down 50% YOY. We take a look at what that means.
+            </h3>
+          </li>
+        </ul>
+      </section>
+      <section class="topics">
+        <ul class="topics_list">
+          <li class="topics__list__item">
+            <h1 class="topics__heading">01 Reviving Retro PCs</h1>
+            <h2 class="topics__subheading">What happens when old PCs are given modern upgrades?</h2>
+          </li>
+          <li class="topics__list__item">
+            <h1 class="topics__heading">02 Top 10 Laptops of 2022</h1>
+            <h2 class="topics__subheading">Our best picks for various needs and budgets.</h2>
+          </li>
+          <li class="topics__list__item">
+            <h1 class="topics__heading">03 The Growth of Gaming</h1>
+            <h2 class="topics__subheading">How the pandemic has sparked fresh opportunities.</h2>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="#">Luke Nam</a>.
+    </div>
+  </body>
 </html>
