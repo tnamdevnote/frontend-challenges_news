@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
 :root {
   --color-yellow: #e9aa52;
   --color-light-vermilion: #f15d51;
@@ -11,6 +16,11 @@
   --font-heading-md: 32px;
   --font-heading-sm: 20px;
   --font-heading-xs: 18px;
+  --font-body: 15px;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
 
   --screen-desktop: 1440px;
   --screen-mobile: 375px;
@@ -19,11 +29,11 @@
 /* default styles */
 * {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
 
 body {
   margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 button {
@@ -80,5 +90,41 @@ main {
 
 /* site-content */
 .site__content {
+  margin-top: 1.5rem;
   grid-column: span 6;
+}
+
+.headline__img {
+  height: 300px;
+  background: content-box url(/assets/images/image-web-3-mobile.jpg);
+  background-size: cover;
+}
+
+.headline__heading {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-dark-space-blue);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-extra-bold);
+  line-height: 2.5rem;
+}
+
+.headline__subheading {
+  color: var(--color-gunmetal);
+  font-size: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  line-height: 26px;
+}
+
+.headline__readmore {
+  padding-inline: 2rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-light-vermilion);
+  color: var(--color-almost-white);
+  font-size: 14px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.5rem;
+  letter-spacing: 4.375px;
 }
