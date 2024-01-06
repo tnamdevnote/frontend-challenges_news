@@ -1,0 +1,84 @@
+:root {
+  --color-yellow: #e9aa52;
+  --color-light-vermilion: #f15d51;
+  --color-almost-white: #fffdfa;
+  --color-silver: #c5c6ce;
+  --color-gunmetal: #5e607a;
+  --color-dark-space-blue: #00001a;
+
+  --font-heading-xl: 56px;
+  --font-heading-lg: 40px;
+  --font-heading-md: 32px;
+  --font-heading-sm: 20px;
+  --font-heading-xs: 18px;
+
+  --screen-desktop: 1440px;
+  --screen-mobile: 375px;
+}
+
+/* default styles */
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-family: inherit;
+}
+
+button:focus-visible {
+  outline: 4px auto var(--color-yellow);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* main */
+main {
+  margin-inline: 1rem;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+/* nav bar */
+.nav {
+  margin-top: 1.5rem;
+  grid-column: span 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav .logo > svg {
+  width: 44px;
+  height: 28px;
+}
+
+.nav .menu > svg {
+  width: 40px;
+  height: 17px;
+}
+
+/* site-content */
+.site__content {
+  grid-column: span 6;
+}
