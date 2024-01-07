@@ -22,6 +22,8 @@
   --font-weight-bold: 700;
   --font-weight-extra-bold: 800;
 
+  --animation-duration: 300ms;
+
   --screen-desktop: 1110px;
   --screen-mobile: 375px;
 
@@ -52,6 +54,10 @@ button {
 
 button:focus-visible {
   outline: 4px auto var(--color-yellow);
+}
+
+a {
+  text-decoration: inherit;
 }
 
 ul {
@@ -215,6 +221,7 @@ main {
 }
 
 .attribution {
+  margin-block: 2rem;
   grid-column: span 6;
   font-size: 11px;
   text-align: center;
@@ -260,7 +267,7 @@ main {
 
   .nav__menu__link:hover {
     color: var(--color-light-vermilion);
-    text-decoration: inherit;
+    transition: color var(--animation-duration);
   }
 
   .headline {
@@ -302,12 +309,18 @@ main {
   }
 
   .headline__readmore:hover {
-    background-color: var(--color-light-vermilion);
+    background-color: var(--color-dark-space-blue);
+    transition: background-color var(--animation-duration);
   }
 
   .trending {
     margin-top: 4rem;
     grid-column: span 4;
+  }
+
+  .trending__list__item:hover .link .trending__card__heading {
+    color: var(--color-yellow);
+    transition: color var(--animation-duration);
   }
 
   .topics {
@@ -322,6 +335,11 @@ main {
 
   .topics__list__item {
     grid-column: span 4;
+  }
+
+  .topics__list__item:hover .link .topics__heading {
+    color: var(--color-light-vermilion);
+    transition: color var(--animation-duration);
   }
 
   .attribution {
