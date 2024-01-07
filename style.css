@@ -264,9 +264,12 @@ main {
 
   .headline__thumbnail {
     grid-column: span 8;
+    background: content-box url(/assets/images/image-web-3-desktop.jpg);
+    background-size: contain;
   }
 
   .headline__heading {
+    margin: 0;
     grid-column: span 4;
     font-size: var(--font-heading-xl);
     line-height: 4rem;
