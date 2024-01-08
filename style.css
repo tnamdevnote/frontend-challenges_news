@@ -52,10 +52,6 @@ button {
   font-family: inherit;
 }
 
-button:focus-visible {
-  outline: 4px auto var(--color-yellow);
-}
-
 a {
   text-decoration: inherit;
 }
@@ -76,6 +72,8 @@ main {
 
 /* nav bar */
 .nav {
+  position: sticky;
+  top: 1.5rem;
   margin-top: 1.5rem;
   grid-column: span 6;
   display: flex;
@@ -88,13 +86,71 @@ main {
   height: 28px;
 }
 
-.nav .menu > svg {
+.nav .mobile__nav__button {
+  z-index: 98;
+}
+
+.nav .mobile__nav__button .mobile__nav__open {
   width: 40px;
   height: 17px;
 }
 
+.nav .mobile__nav__close {
+  display: none;
+}
+
 .nav__menu {
   display: none;
+}
+
+.mobile__nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 16rem;
+  min-height: 100dvh;
+  background-color: var(--color-almost-white);
+  transition: right 300ms ease;
+}
+
+.mobile__nav.expanded {
+  right: 0;
+  transition: right 300ms ease;
+}
+
+.mobile__nav__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  min-height: 100dvh;
+  display: none;
+  background-color: #00001a50;
+}
+
+.mobile__nav__overlay.expanded {
+  display: block;
+}
+
+.mobile__nav__menu {
+  margin-top: 10rem;
+  margin-inline: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.mobile__nav__menu .link {
+  margin: 0;
+  color: var(--color-gunmetal);
+  text-decoration: inherit;
+}
+
+.mobile__nav__menu .link:hover {
+  color: var(--color-light-vermilion);
+  transition: var(--animation-duration);
 }
 
 .headline {
@@ -249,7 +305,7 @@ main {
     height: 40px;
   }
 
-  .nav .menu {
+  .nav .mobile__nav__button {
     display: none;
   }
 
@@ -260,12 +316,12 @@ main {
     font-weight: var(--font-weight-regular);
   }
 
-  .nav__menu__link {
+  .nav__menu .link {
     color: var(--color-gunmetal);
     text-decoration: inherit;
   }
 
-  .nav__menu__link:hover {
+  .nav__menu .link:hover {
     color: var(--color-light-vermilion);
     transition: color var(--animation-duration);
   }

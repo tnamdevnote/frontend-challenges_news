@@ -8,19 +8,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
     <link rel="fonts" href="./assets/fonts/Inter-VariableFont_slnt,wght.ttf" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="main.js" defer></script>
 
-    <title>Frontend Mentor | News homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>News homepage</title>
   </head>
   <body>
     <main>
@@ -33,20 +23,36 @@
             />
           </svg>
         </a>
-        <button class="menu">
-          <svg width="40" height="17" viewBox="0 0 40 17" xmlns="http://www.w3.org/2000/svg">
+        <button class="mobile__nav__button">
+          <svg class="mobile__nav__open" width="40" height="17" viewBox="0 0 40 17" xmlns="http://www.w3.org/2000/svg">
             <g fill="#00001A" fill-rule="evenodd">
               <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
               <path d="M0 0h40v3H0z" />
             </g>
           </svg>
+          <svg class="mobile__nav__close" width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+              <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+            </g>
+          </svg>
         </button>
+        <div class="mobile__nav__overlay"></div>
+        <aside class="mobile__nav">
+          <ul class="mobile__nav__menu">
+            <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Home</a></li>
+            <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">New</a></li>
+            <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Popular</a></li>
+            <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Trending</a></li>
+            <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Categories</a></li>
+          </ul>
+        </aside>
         <ul class="nav__menu">
-          <li class="nav__menu__item"><a href="#" class="nav__menu__link">Home</a></li>
-          <li class="nav__menu__item"><a href="#" class="nav__menu__link">New</a></li>
-          <li class="nav__menu__item"><a href="#" class="nav__menu__link">Popular</a></li>
-          <li class="nav__menu__item"><a href="#" class="nav__menu__link">Trending</a></li>
-          <li class="nav__menu__item"><a href="#" class="nav__menu__link">Categories</a></li>
+          <li class="nav__menu__item"><a href="#" class="nav__menu link">Home</a></li>
+          <li class="nav__menu__item"><a href="#" class="nav__menu link">New</a></li>
+          <li class="nav__menu__item"><a href="#" class="nav__menu link">Popular</a></li>
+          <li class="nav__menu__item"><a href="#" class="nav__menu link">Trending</a></li>
+          <li class="nav__menu__item"><a href="#" class="nav__menu link">Categories</a></li>
         </ul>
       </nav>
       <section class="headline">
