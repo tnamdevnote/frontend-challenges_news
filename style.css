@@ -296,6 +296,8 @@ main {
   }
 
   .nav {
+    position: relative;
+    top: 0;
     margin-top: 6rem;
     grid-column: span 12;
   }
