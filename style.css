@@ -162,8 +162,12 @@ main {
 
 .headline__thumbnail {
   height: 300px;
-  background: content-box url(/assets/images/image-web-3-mobile.jpg);
-  background-size: cover;
+  grid-column: span 6;
+}
+
+.headline__img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .headline__heading {
@@ -342,8 +346,6 @@ main {
 
   .headline__thumbnail {
     grid-column: span 8;
-    background: content-box url(/assets/images/image-web-3-desktop.jpg);
-    background-size: contain;
   }
 
   .headline__heading {
