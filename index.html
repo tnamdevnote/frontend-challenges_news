@@ -13,7 +13,7 @@
     <title>News homepage</title>
   </head>
   <body>
-    <nav class="nav">
+    <header class="banner">
       <a href="/" class="logo">
         <svg width="65" height="40" viewBox="0 0 65 40" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -22,38 +22,40 @@
           />
         </svg>
       </a>
-      <button class="mobile__nav__button">
-        <svg class="mobile__nav__open" width="40" height="17" viewBox="0 0 40 17" xmlns="http://www.w3.org/2000/svg">
-          <g fill="#00001A" fill-rule="evenodd">
-            <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
-            <path d="M0 0h40v3H0z" />
-          </g>
-        </svg>
-        <svg class="mobile__nav__close" width="32" height="31" xmlns="http://www.w3.org/2000/svg">
-          <g fill="#00001A" fill-rule="evenodd">
-            <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
-            <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
-          </g>
-        </svg>
-      </button>
-      <div class="mobile__nav__overlay"></div>
-      <aside class="mobile__nav">
-        <ul class="mobile__nav__menu">
-          <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Home</a></li>
-          <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">New</a></li>
-          <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Popular</a></li>
-          <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Trending</a></li>
-          <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Categories</a></li>
+      <nav class="nav">
+        <button class="mobile__nav__button">
+          <svg class="mobile__nav__open" width="40" height="17" viewBox="0 0 40 17" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+              <path d="M0 0h40v3H0z" />
+            </g>
+          </svg>
+          <svg class="mobile__nav__close" width="32" height="31" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#00001A" fill-rule="evenodd">
+              <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z" />
+              <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z" />
+            </g>
+          </svg>
+        </button>
+        <div class="mobile__nav__overlay"></div>
+        <aside class="mobile__nav">
+          <ul class="mobile__nav__menu">
+            <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Home</a></li>
+            <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">New</a></li>
+            <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Popular</a></li>
+            <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Trending</a></li>
+            <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Categories</a></li>
+          </ul>
+        </aside>
+        <ul class="nav__menu">
+          <li class="nav__menu__item"><a href="#" class="nav__menu link">Home</a></li>
+          <li class="nav__menu__item"><a href="#" class="nav__menu link">New</a></li>
+          <li class="nav__menu__item"><a href="#" class="nav__menu link">Popular</a></li>
+          <li class="nav__menu__item"><a href="#" class="nav__menu link">Trending</a></li>
+          <li class="nav__menu__item"><a href="#" class="nav__menu link">Categories</a></li>
         </ul>
-      </aside>
-      <ul class="nav__menu">
-        <li class="nav__menu__item"><a href="#" class="nav__menu link">Home</a></li>
-        <li class="nav__menu__item"><a href="#" class="nav__menu link">New</a></li>
-        <li class="nav__menu__item"><a href="#" class="nav__menu link">Popular</a></li>
-        <li class="nav__menu__item"><a href="#" class="nav__menu link">Trending</a></li>
-        <li class="nav__menu__item"><a href="#" class="nav__menu link">Categories</a></li>
-      </ul>
-    </nav>
+      </nav>
+    </header>
     <main aria-label="site-content">
       <section class="headline">
         <div class="headline__thumbnail"></div>
@@ -148,9 +150,11 @@
         </ul>
       </section>
     </main>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-      <a href="#">Luke Nam</a>.
-    </div>
+    <footer class="footer">
+      <div>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="#">Luke Nam</a>.
+      </div>
+    </footer>
   </body>
 </html>
