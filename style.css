@@ -228,11 +228,18 @@ main {
   margin-bottom: 0;
 }
 
-.new__divider {
-  margin-block: 2rem;
+.new__list__item::after {
+  content: '';
+  margin-block: 1rem;
+  width: 100%;
   height: 1px;
+  display: inline-block;
   background-color: var(--color-gunmetal);
   border: 1px var(--color-silver);
+}
+
+.new__list__item:nth-last-child(-n + 1)::after {
+  display: none;
 }
 
 .new__card__heading {
@@ -296,7 +303,7 @@ main {
   text-align: center;
 }
 .footer a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228, 75%, 51%);
 }
 
 @media only screen and (min-width: 1110px) {
