@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="main.js" defer></script>
 
-    <title>News homepage</title>
+    <title>W. News</title>
   </head>
   <body>
     <header class="banner">
@@ -24,7 +24,7 @@
           </svg>
         </a>
       </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="global">
         <button class="mobile__nav__button">
           <svg class="mobile__nav__open" width="40" height="17" viewBox="0 0 40 17" xmlns="http://www.w3.org/2000/svg">
             <g fill="#00001A" fill-rule="evenodd">
@@ -49,17 +49,18 @@
             <li class="mobile__nav__menu__item"><a href="#" class="mobile__nav__menu link">Categories</a></li>
           </ul>
         </aside>
-        <ul class="nav__menu">
-          <li class="nav__menu__item"><a href="#" class="nav__menu link">Home</a></li>
-          <li class="nav__menu__item"><a href="#" class="nav__menu link">New</a></li>
-          <li class="nav__menu__item"><a href="#" class="nav__menu link">Popular</a></li>
-          <li class="nav__menu__item"><a href="#" class="nav__menu link">Trending</a></li>
-          <li class="nav__menu__item"><a href="#" class="nav__menu link">Categories</a></li>
+        <ul class="nav__menu" role="menubar">
+          <li class="nav__menu__item" role="menuitem"><a href="#" class="nav__menu link">Home</a></li>
+          <li class="nav__menu__item" role="menuitem"><a href="#" class="nav__menu link">New</a></li>
+          <li class="nav__menu__item" role="menuitem"><a href="#" class="nav__menu link">Popular</a></li>
+          <li class="nav__menu__item" role="menuitem"><a href="#" class="nav__menu link">Trending</a></li>
+          <li class="nav__menu__item" role="menuitem"><a href="#" class="nav__menu link">Categories</a></li>
         </ul>
       </nav>
     </header>
     <main aria-label="site-content">
-      <section class="headline">
+      <h1 class="page__heading">W. News Home Page</h1>
+      <article class="headline" aria-label="Headline">
         <picture class="headline__thumbnail">
           <source media="(min-width: 1110px)" srcset="/assets/images/image-web-3-desktop.jpg" />
           <img
@@ -78,8 +79,8 @@
           </p>
           <button type="button" class="headline__readmore">READ MORE</button>
         </div>
-      </section>
-      <section class="new">
+      </article>
+      <section class="new" aria-labelledby="heading1">
         <h2 id="heading1" class="new__heading">New</h2>
         <ul class="new__list">
           <li class="new__list__item">
@@ -108,10 +109,10 @@
           </li>
         </ul>
       </section>
-      <section class="topics">
+      <section class="topics" aria-label="Popular Topics">
         <ul class="topics__list">
           <li class="topics__list__item">
-            <a href="#" class="topics__list__item link">
+            <a href="#" class="topics__list__item link" aria-labelledby="retro pc">
               <img
                 src="/assets/images/image-retro-pcs.jpg"
                 alt="retro pc"
@@ -121,13 +122,13 @@
               />
               <div class="topics__wrapper">
                 <span class="topics__number">01</span>
-                <h3 class="topics__heading">Reviving Retro PCs</h3>
+                <h3 class="topics__heading" id="retro pc">Reviving Retro PCs</h3>
                 <p class="topics__subheading">What happens when old PCs are given modern upgrades?</p>
               </div>
             </a>
           </li>
           <li class="topics__list__item">
-            <a href="#" class="topics__list__item link">
+            <a href="#" class="topics__list__item link" aria-labelledby="laptops">
               <img
                 src="/assets/images/image-top-laptops.jpg"
                 alt="laptop"
@@ -137,13 +138,13 @@
               />
               <div class="topics__wrapper">
                 <span class="topics__number">02</span>
-                <h3 class="topics__heading">Top 10 Laptops of 2022</h3>
+                <h3 class="topics__heading" id="laptops">Top 10 Laptops of 2022</h3>
                 <p class="topics__subheading">Our best picks for various needs and budgets.</p>
               </div>
             </a>
           </li>
           <li class="topics__list__item">
-            <a href="#" class="topics__list__item link">
+            <a href="#" class="topics__list__item link" aria-labelledby="gaming">
               <img
                 src="/assets/images/image-gaming-growth.jpg"
                 alt="game"
@@ -153,7 +154,7 @@
               />
               <div class="topics__wrapper">
                 <span class="topics__number">03</span>
-                <h3 class="topics__heading">The Growth of Gaming</h3>
+                <h3 class="topics__heading" id="gaming">The Growth of Gaming</h3>
                 <p class="topics__subheading">How the pandemic has sparked fresh opportunities.</p>
               </div>
             </a>

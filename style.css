@@ -89,6 +89,9 @@ main {
 }
 
 .nav .mobile__nav__button {
+  position: fixed;
+  top: 1.5rem;
+  right: 1rem;
   z-index: 98;
 }
 
@@ -153,6 +156,10 @@ main {
 .mobile__nav__menu .link:hover {
   color: var(--color-light-vermilion);
   transition: var(--animation-duration);
+}
+
+.page__heading {
+  display: none;
 }
 
 .headline {
@@ -316,6 +323,10 @@ main {
   }
 
   .nav .mobile__nav__button {
+    display: none;
+  }
+
+  .nav .mobile__nav {
     display: none;
   }
 
