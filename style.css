@@ -90,7 +90,7 @@ main {
 
 .nav .mobile__nav__button {
   position: fixed;
-  top: 1.5rem;
+  top: 2rem;
   right: 1rem;
   z-index: 98;
 }
