@@ -40,6 +40,7 @@
 
 body {
   margin: 0;
+  min-height: 100dvh;
   background-color: var(--color-almost-white);
   font-family: 'Inter', sans-serif;
 }
@@ -65,7 +66,7 @@ ul {
 main {
   margin-inline: 1rem;
   margin-bottom: 1rem;
-  min-height: 100dvh;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
@@ -73,8 +74,8 @@ main {
 /* nav bar */
 .nav {
   position: sticky;
-  top: 1.5rem;
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  margin-inline: 1rem;
   grid-column: span 6;
   display: flex;
   justify-content: space-between;
@@ -194,7 +195,7 @@ main {
   letter-spacing: 4.375px;
 }
 
-.trending {
+.new {
   margin-top: 4rem;
   padding: 1.5rem 1.25rem;
   grid-column: span 6;
@@ -203,7 +204,7 @@ main {
   background-color: var(--color-dark-space-blue);
 }
 
-.trending__heading {
+.new__heading {
   margin-block: 0;
   color: var(--color-yellow);
   font-size: var(--font-heading-md);
@@ -211,18 +212,18 @@ main {
   line-height: 2rem;
 }
 
-.trending__list {
+.new__list {
   margin-bottom: 0;
 }
 
-.trending__divider {
+.new__divider {
   margin-block: 2rem;
   height: 1px;
   background-color: var(--color-gunmetal);
   border: 1px var(--color-silver);
 }
 
-.trending__card__heading {
+.new__card__heading {
   color: var(--color-almost-white);
   font-size: var(--font-heading-sm);
   font-style: normal;
@@ -230,7 +231,7 @@ main {
   line-height: 1.5rem;
 }
 
-.trending__card__subheading {
+.new__card__subheading {
   color: var(--color-silver);
   font-size: var(--font-body);
   font-style: normal;
@@ -296,9 +297,11 @@ main {
   }
 
   .nav {
-    position: relative;
+    position: static;
     top: 0;
-    margin-top: 6rem;
+    padding-top: 6rem;
+    margin-inline: auto;
+    max-width: var(--screen-desktop);
     grid-column: span 12;
   }
 
@@ -371,12 +374,12 @@ main {
     transition: background-color var(--animation-duration);
   }
 
-  .trending {
+  .new {
     margin-top: 4rem;
     grid-column: span 4;
   }
 
-  .trending__list__item:hover .link .trending__card__heading {
+  .new__list__item:hover .link .new__card__heading {
     color: var(--color-yellow);
     transition: color var(--animation-duration);
   }
